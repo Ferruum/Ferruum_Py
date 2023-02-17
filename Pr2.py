@@ -7,10 +7,10 @@ while(True):
     #while (repeat == 777):
     print("Выберете год")
     Year = int(input())
-
-    if ((Year % 4) == 0):
+    #Visok = int(input())
+    if (Year % 4 == 0 and Year % 100 != 0) or Year % 400 == 0:
         for i in range(0,12):
-            for j in range(1,CorrectYear[i]+1):
+            for j in range(1,VisocosnyYear[i]+1):
                 if(j>9):
                     while j > 0:
                         QuantityDays = QuantityDays + (j % 10)
@@ -20,7 +20,7 @@ while(True):
 
     else:
         for i in range(0,12):
-            for j in range(1,VisocosnyYear[i]+1):
+            for j in range(1,CorrectYear[i]+1):
                 if(j>9):
                     while j > 0:
                         QuantityDays = QuantityDays + (j % 10)
