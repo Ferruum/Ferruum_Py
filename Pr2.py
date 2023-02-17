@@ -1,7 +1,6 @@
 CorrectYear = [31,28,31,30,31,30,31,31,30,31,30,31]
 VisocosnyYear = [31,29,31,30,31,30,31,31,30,31,30,31]
 while(True):
-    mass = []
     QuantityDays = 0
     #repeat = 777
 
